@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+    /* this reassigns the default padding and margin, as the browser assigns a margin and padding that sometimes we don't want. */
+    margin: 0;
+    padding: 0;
+}
+
+.main_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.calculator {
+    background: #1a1a1a;
+    width: 350px;
+    height: 450px;
+    padding: 20px;
+    border: 3px solid #4b4b4b;
+    border-radius: 15px;
+}
+
+.background {
+    background: #1a1a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.result_box {
+    display: flex;
+    background: #1a1a1a;
+    border: 3px solid #4b4b4b;
+    border-radius: 15px;
+    height: 80px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    text-align: right;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    background: #a7f5ff;
+    border: none;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.2s;
+    border-radius: 15px;
+}
+
+.operator_symbol_button {
+    font-weight: bold;
+    background: #ffd04e;
+}
+
+.delete_buttons {
+
+    background: #ff5656;
+}
+
+.get_result_button {
+    font-weight: bold;
+    background: #49ff9b;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.calculator_buttons_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 20px;
+    gap: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a p {
+    transition: 0.2s;
+}
+
+a p:hover {
+    opacity: 0.7;
+}
+
+a img {
+    height: 100px;
+    transition: 0.3s;
+}
+
+a img:hover {
+    transform: scale(1.1);
+}
+
+.calculator_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.page_footer {
+    border: 3px solid #4b4b4b;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    text-align: center;
+    margin: 0px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="Styles\page_styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets\icons\page_icon.ico" />
+    <title>Simple Calculator</title>
+
+</head>
+
+<body>
+    <div class="main_flex">
+        <h2>Simple Calculator</h2>
+
+        <div class="calculator">
+
+            <div class="result_box">
+                <input id="result" type="text">
+            </div>
+
+            <div class="calculator_buttons_container">
+
+                <button class="operator_symbol_button" onclick="appendSymbol('+')">+</button>
+                <button class="operator_symbol_button" onclick="appendSymbol('-')">-</button>
+                <button class="operator_symbol_button" onclick="appendSymbol('×')">×</button>
+                <button class="operator_symbol_button" onclick="appendSymbol('÷')">÷</button>
+
+                <button onclick="appendSymbol('7')">7</button>
+                <button onclick="appendSymbol('8')">8</button>
+                <button onclick="appendSymbol('9')">9</button>
+
+                <button class="operator_symbol_button" onclick="appendSymbol('.')">.</button>
+
+                <button onclick="appendSymbol('4')">4</button>
+                <button onclick="appendSymbol('5')">5</button>
+                <button onclick="appendSymbol('6')">6</button>
+
+
+                <button class="delete_buttons" onclick="eraseLastCharacter()">Del</button>
+
+                <button onclick="appendSymbol('1')">1</button>
+                <button onclick="appendSymbol('2')">2</button>
+                <button onclick="appendSymbol('3')">3</button>
+
+                <button class="delete_buttons" onclick="eraseAll()">C E</button>
+
+                <button class="get_result_button" onclick="calculateResult()">=</button>
+
+                <button onclick="appendSymbol('0')">0</button>
+
+            </div>
+
+        </div>
+
+        <div class="calculator_info">
+            <a href="https://github.com/AlexCats1" target="_blank">
+                <p>Developed by AlexCats1</p>
+            </a>
+
+            <a href="https://github.com/AlexCats1" target="_blank">
+                <img src="assets\images\alexcats1_logo.png" />
+            </a>
+        </div>
+
+    </div>
+
+    <div class="page_footer">
+        <p>&#64;AlexCats1. For more information or any situation contact me at: alexcatsdev&#64;gmail.com. This page may
+            be changed or not in the future.</p>
+    </div>
+
+    <div class="background"></div>
+
+    <script src="calculator_functionality.js"></script>
+</body>
+
+</html>
