@@ -17,7 +17,7 @@ body {
 
 .calculator {
     background: #1a1a1a;
-    width: 350px;
+    width: 370px;
     height: 450px;
     padding: 20px;
     border: 3px solid #4b4b4b;
@@ -55,9 +55,10 @@ input:focus {
 }
 
 button {
-    background: #a7f5ff;
-    border: none;
-    width: 60px;
+    background: transparent;
+    border: 3px solid #4edcff;
+    color: #4edcff;
+    width: 80px;
     height: 60px;
     font-size: 30px;
     text-align: center;
@@ -67,17 +68,19 @@ button {
 
 .operator_symbol_button {
     font-weight: bold;
-    background: #ffd04e;
+    color: #ffd04e;
+    border: 3px solid #ffd04e;
 }
 
 .delete_buttons {
-
-    background: #ff5656;
+    border: 3px solid #ff5656;
+    color: #ff5656;
 }
 
 .get_result_button {
     font-weight: bold;
-    background: #49ff9b;
+    border: 3px solid #49ff9b;
+    color: #49ff9b;
 }
 
 button:hover {

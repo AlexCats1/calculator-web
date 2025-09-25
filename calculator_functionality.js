@@ -13,7 +13,7 @@ function calculateResult() {
     else {
         try {
             // with eval, we can evaluate a string as javascript code. this is very useful, as we can ust introduce the string inside the eval and get a result. if there's an error in trying to evaluate, we have the try and catch, so in the catch we can assign an error if something bad happened.
-            operation_string = eval(operation_string.replace('÷', '/').replace('×', '*')); // here, in the operation_string, we jsut replace some symbols in case the user entered them. with replace, we can specify which symbol we want to change for what. the first parameter is the symbol that will be changed, and the second parameter ios the symbol we will get.
+            operation_string = eval(operation_string = operation_string.replaceAll('÷', '/').replaceAll('×', '*')); // here, in the operation_string, we jsut replace some symbols in case the user entered them. with replaceAll, we can specify which symbol we want to change for what. the first parameter is the symbol that will be changed, and the second parameter ios the symbol we will get. with replaceAll, it will check for all the symbols that need to be changed, not just the first one that the program finds (this happens in replace, so that's why we use replaceAll.)
             // we use replace two times, as we want to replace two times the symbols, for both division and multiplication
             document.getElementById('result').value = operation_string; // finally, if everything goes correctly, we just update the value of the result id.
         }
