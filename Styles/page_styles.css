@@ -16,16 +16,15 @@ body {
 }
 
 .calculator {
-    background: #1a1a1a;
     width: 370px;
     height: 450px;
     padding: 20px;
-    border: 3px solid #4b4b4b;
-    border-radius: 15px;
+    border: 3px solid #424242;
+    border-radius: 7px;
 }
 
 .background {
-    background: #1a1a1a;
+    background: #080808;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,9 +35,9 @@ body {
 
 .result_box {
     display: flex;
-    background: #1a1a1a;
-    border: 3px solid #4b4b4b;
-    border-radius: 15px;
+    background: transparent;
+    border: 3px solid #424242;
+    border-radius: 10px;
     height: 80px;
 }
 
@@ -55,32 +54,24 @@ input:focus {
 }
 
 button {
-    background: transparent;
-    border: 3px solid #4edcff;
-    color: #4edcff;
+    background: rgb(17, 17, 17);
+    border: 3px solid rgb(17, 17, 17);
+    color: white;
     width: 80px;
     height: 60px;
-    font-size: 30px;
+    font-size: 23px;
     text-align: center;
-    transition: 0.2s;
-    border-radius: 15px;
+    transition: 0.1s;
+    border-radius: 7px;
 }
 
-.operator_symbol_button {
-    font-weight: bold;
-    color: #ffd04e;
-    border: 3px solid #ffd04e;
-}
-
-.delete_buttons {
-    border: 3px solid #ff5656;
-    color: #ff5656;
+.operator_button {
+    border: 3px solid #181818;
+    background: #181818;
 }
 
 .get_result_button {
-    font-weight: bold;
-    border: 3px solid #49ff9b;
-    color: #49ff9b;
+    background-image: linear-gradient(to right, #ff0000, #4400ff 100%);
 }
 
 button:hover {
@@ -94,6 +85,7 @@ button:hover {
     justify-items: center;
     padding: 20px;
     gap: 5px;
+    align-items: center;
 }
 
 a {
